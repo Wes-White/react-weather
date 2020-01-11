@@ -2,7 +2,7 @@ import React from "react";
 
 const Weather = props => {
   return (
-    <div className="weather">
+    <div className="weather shadow">
       <h2>{props.city}</h2>
       <img
         className="weather-img"
@@ -10,7 +10,8 @@ const Weather = props => {
         alt="weather icon"
       ></img>
       <p>
-        Actual Temp: {props.temp}˚F Real Feel: {props.feel}˚F
+        Actual Temp: {Math.round(props.temp)}˚F Real Feel:{" "}
+        {Math.round(props.feel)}˚F
       </p>
       <p>{props.description}</p>
     </div>
