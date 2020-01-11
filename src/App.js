@@ -44,7 +44,7 @@ function App() {
       <h1 className="title ">Weather Guide</h1>
       <div className="container">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="input-container">
+          <div className="input-container ">
             <input name="zipcode" placeholder="Zipcode" ref={register} />
 
             <Button className="btn" color="primary" type="submit">
